@@ -1,0 +1,52 @@
+@import "variables";
+
+.navbar,
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 48px;
+  justify-content: flex-end;
+}
+
+.navbar span {
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+.navbar-item {
+  margin: 0 6px 0 0;
+  text-transform: capitalize;
+  color: $white;
+  border: 1px solid $mid-colour;
+  border-radius: 3px;
+  cursor: pointer;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-item::before,
+.navbar-item::after {
+  position: absolute;
+}
+
+.navbar-item,
+.navbar-item::before,
+.navbar-item::after {
+  width: 100px;
+  height: 24px;
+  padding: 3px;
+}
+
+.navbar-item::before {
+  content: "";
+  background-color: $dark-colour;
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.navbar-item:hover::before {
+  transform: translate3d(0, -100%, 0);
+}
