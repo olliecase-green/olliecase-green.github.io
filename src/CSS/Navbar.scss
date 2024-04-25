@@ -22,7 +22,7 @@
 .navbar-item {
   font-size: 13px;
   text-transform: uppercase;
-  color: $white;
+  color: $dark-colour;
   border-top: 1px solid $dark-colour;
   border-left: 1px solid $dark-colour;
   border-right: 1px solid $dark-colour;
@@ -35,29 +35,94 @@
   padding: 3px;
 }
 
+.navbar-item-background {
+  // top: 0;
+  // left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $dark-colour;
+  // border-radius: 0.85rem;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+// .navbar-item:hover .navbar-item-background {
+//   transform: scale3d(1.2, 1.2, 1);
+// }
+
+.navbar-item-background::before,
+.navbar-item-background::after {
+  content: "";
+  position: absolute;
+  background: $light-colour;
+}
+
+.navbar-item-background::before {
+  width: 110%;
+  height: 0;
+  padding-bottom: 110%;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
+}
+
+.navbar-item:hover .navbar-item-background::before {
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+  transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+}
+
+.navbar-item-background::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navbar-item:hover .navbar-item-background::after {
+  opacity: 1;
+  transition-duration: 0.01s;
+  transition-delay: 0.3s;
+}
+
 .navbar-item span {
   position: relative;
   transition: 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  color: $white;
 }
 
 .navbar-item:hover span {
   color: $black;
 }
 
-.navbar-item::before,
-.navbar-item::after {
-  position: absolute;
-  width: 110px;
-  height: 50px;
-  padding: 3px;
-}
+// OLD CSS
 
-.navbar-item::before {
-  content: "";
-  background-color: $dark-colour;
-  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
-}
+// .navbar-item span {
+//   position: relative;
+//   transition: 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+// }
 
-.navbar-item:hover::before {
-  transform: translate3d(0, -100%, 0);
-}
+// .navbar-item:hover span {
+//   color: $black;
+// }
+
+// .navbar-item::before,
+// .navbar-item::after {
+//   position: absolute;
+//   width: 110px;
+//   height: 50px;
+//   padding: 3px;
+// }
+
+// .navbar-item::before {
+//   content: "";
+//   background-color: $dark-colour;
+//   transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+// }
+
+// .navbar-item:hover::before {
+//   transform: translate3d(0, -100%, 0);
+// }

@@ -7,6 +7,7 @@ function Navbar() {
     return options.map((option) => {
       return (
         <div className="navbar-item">
+          <div className="navbar-item-background"></div>
           <span>{option}</span>
         </div>
       )
