@@ -5,8 +5,8 @@
   display: grid;
   grid-template-areas:
     "sidebar navbar"
-    "sidebar welcome"
     "sidebar about"
+    "sidebar experience"
     "sidebar projects";
   grid-template-columns: 1fr 10fr;
 }

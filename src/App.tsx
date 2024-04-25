@@ -1,9 +1,9 @@
 import React from "react"
-import AboutMe from "./Components/AboutMe"
-import Projects from "./Components/Projects"
 import Navbar from "./Components/Navbar"
 import Sidebar from "./Components/Sidebar"
-import Welcome from "./Components/Welcome"
+import About from "./Components/About"
+import Experience from "./Components/Experience"
+import Projects from "./Components/Projects"
 import "./CSS/App.scss"
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Sidebar />
-      <Welcome />
-      <AboutMe />
+      <About />
+      <Experience />
       <Projects />
     </div>
   )
