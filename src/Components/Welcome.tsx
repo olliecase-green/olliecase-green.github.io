@@ -9,7 +9,11 @@ function Welcome() {
         experience building web applications using Vue.js, TypeScript,
         JavaScript and Python.
       </h2>
-      <div>
+      <button className="lets-talk-button">
+        <div className="button-background"></div>
+        <span>Let's talk!</span>
+      </button>
+      <div className="welcome-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

@@ -12,3 +12,78 @@
 .subtitle {
   font-size: 32px;
 }
+
+.welcome-text {
+  margin: 20px 0 0 0;
+}
+
+.lets-talk-button {
+  cursor: pointer;
+  height: 44px;
+  width: 200px;
+  font-size: 24px;
+  font-family: $main-font;
+  background-color: $dark-colour;
+  border: 1px solid $dark-colour;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+}
+
+.button-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $dark-colour;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.button-background::before,
+.button-background::after {
+  content: "";
+  position: absolute;
+  background: $white;
+}
+
+.button-background::before {
+  width: 110%;
+  height: 0;
+  padding-bottom: 110%;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
+}
+
+.lets-talk-button:hover .button-background::before {
+  transition: transform 0.3s cubic-bezier(0.1, 0, 0.3, 1);
+  transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+}
+
+.button-background::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lets-talk-button:hover .button-background::after {
+  opacity: 1;
+  transition-duration: 0.01s;
+  transition-delay: 0.3s;
+}
+
+.lets-talk-button span {
+  position: relative;
+  transition: 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  color: $white;
+}
+
+.lets-talk-button:hover span {
+  color: $black;
+}
