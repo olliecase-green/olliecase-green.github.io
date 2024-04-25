@@ -1,12 +1,31 @@
+import { useEffect, useState } from "react"
 import "../CSS/Navbar.scss"
 
 function Navbar() {
+  const [prevScrollPosition, setPrevScrollPosition] = useState(window.scrollY)
+  const [visible, setVisible] = useState(true)
   const options = ["about", "experience", "projects", "contact"]
+  const navbarClass = visible ? "navbar visible" : "navbar hidden"
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 60) {
+        const currScrollPosition = window.scrollY
+        const visible = prevScrollPosition > currScrollPosition
+        setVisible(visible)
+        setPrevScrollPosition(currScrollPosition)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [prevScrollPosition])
 
   function createNavbarOptions() {
     return options.map((option) => {
       return (
-        <div className="navbar-item">
+        <div key={option} className="navbar-item">
           <div className="navbar-item-background"></div>
           <span>{option}</span>
         </div>
@@ -15,8 +34,8 @@ function Navbar() {
   }
 
   return (
-    <div className="navbar">
-      <div className="navbar-name">Oliver Case-Green</div>
+    <div className={navbarClass}>
+      <div className="navbar-name">olliecasegreen</div>
       <div className="navbar-options">{createNavbarOptions()}</div>
     </div>
   )

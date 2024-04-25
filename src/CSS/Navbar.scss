@@ -14,7 +14,11 @@
   top: 0;
   backdrop-filter: blur(8px);
   z-index: 100;
-  transition: top 0.3s;
+  transition: transform 0.5s;
+}
+
+.hidden {
+  transform: translateY(-100%);
 }
 
 .navbar-options {
