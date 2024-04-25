@@ -9,6 +9,12 @@
 .navbar {
   justify-content: space-between;
   border-bottom: 1px solid $dark-colour;
+  grid-area: navbar;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  transition: top 0.3s;
 }
 
 .navbar-options {

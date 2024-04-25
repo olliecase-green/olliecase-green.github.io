@@ -1,6 +1,7 @@
 @import "variables";
 
 body {
-  color: $dark-colour;
   margin: 0;
+  color: $dark-colour;
+  font-family: $main-font;
 }

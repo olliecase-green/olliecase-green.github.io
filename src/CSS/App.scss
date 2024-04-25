@@ -1,6 +1,12 @@
 @import "variables";
 
 .App {
-  font-family: $main-font;
   background: $light-colour;
+  display: grid;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar welcome"
+    "sidebar about"
+    "sidebar projects";
+  grid-template-columns: 1fr 10fr;
 }
