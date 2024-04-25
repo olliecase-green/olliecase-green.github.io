@@ -7,44 +7,55 @@
 }
 
 .navbar {
-  height: 48px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid $dark-colour;
 }
 
-.navbar span {
-  position: relative;
-  mix-blend-mode: difference;
+.navbar-options {
+  display: flex;
+}
+
+.navbar-name {
+  margin: 0 0 0 10px;
 }
 
 .navbar-item {
-  margin: 0 6px 0 0;
-  text-transform: capitalize;
+  font-size: 13px;
+  text-transform: uppercase;
   color: $white;
-  border: 1px solid $mid-colour;
-  border-radius: 3px;
+  border-top: 1px solid $dark-colour;
+  border-left: 1px solid $dark-colour;
+  border-right: 1px solid $dark-colour;
   cursor: pointer;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  width: 110px;
+  height: 50px;
+  padding: 3px;
+}
+
+.navbar-item span {
+  position: relative;
+  transition: 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.navbar-item:hover span {
+  color: $black;
 }
 
 .navbar-item::before,
 .navbar-item::after {
   position: absolute;
-}
-
-.navbar-item,
-.navbar-item::before,
-.navbar-item::after {
-  width: 100px;
-  height: 24px;
+  width: 110px;
+  height: 50px;
   padding: 3px;
 }
 
 .navbar-item::before {
   content: "";
   background-color: $dark-colour;
-  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
 .navbar-item:hover::before {

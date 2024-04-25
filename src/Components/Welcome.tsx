@@ -1,8 +1,14 @@
-import "../CSS/Projects.scss"
+import "../CSS/Welcome.scss"
 
-function Projects() {
+function Welcome() {
   return (
-    <div className="projects-container">
+    <div className="welcome-container">
+      <h1 className="title">Welcome to my portfolio</h1>
+      <h2 className="subtitle">
+        I am a London-based Software Engineer with two years of commercial
+        experience building web applications using Vue.js, TypeScript,
+        JavaScript and Python.
+      </h2>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -16,4 +22,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Welcome

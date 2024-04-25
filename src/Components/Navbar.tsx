@@ -1,10 +1,9 @@
-import React from "react"
 import "../CSS/Navbar.scss"
 
 function Navbar() {
-  const options = ["about me", "experience", "projects", "contact"]
+  const options = ["about", "experience", "projects", "contact"]
 
-  function createNavbar() {
+  function createNavbarOptions() {
     return options.map((option) => {
       return (
         <div className="navbar-item">
@@ -14,7 +13,12 @@ function Navbar() {
     })
   }
 
-  return <div className="navbar">{createNavbar()}</div>
+  return (
+    <div className="navbar">
+      <div className="navbar-name">Oliver Case-Green</div>
+      <div className="navbar-options">{createNavbarOptions()}</div>
+    </div>
+  )
 }
 
 export default Navbar
