@@ -10,7 +10,7 @@
 
 .main-content,
 .extra-content {
-  padding: 30px 50px 50px 50px;
+  padding: 50px 50px 200px 50px;
 }
 
 .main-content {
@@ -22,7 +22,7 @@
   border-left: 1px solid $dark-colour;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -109,4 +109,8 @@
 
 .lets-talk-button:hover span {
   color: $black;
+}
+
+.images {
+  height: 100px;
 }
