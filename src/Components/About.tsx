@@ -1,7 +1,10 @@
 import "../CSS/About.scss"
-import codeImage from "../assets/codeImage.png"
-import branchImage from "../assets/branchImage.png"
-import gearImage from "../assets/gearImage.jpg"
+import jsIcon from "../assets/jsIcon.png"
+import tsIcon from "../assets/tsIcon.png"
+import pythonIcon from "../assets/pythonIcon.png"
+import vueIcon from "../assets/vueIcon.png"
+import reactIcon from "../assets/reactIcon.png"
+import djangoIcon from "../assets/djangoIcon.png"
 
 function About() {
   return (
@@ -19,9 +22,24 @@ function About() {
         </button>
       </div>
       <div className="extra-content">
-        <img className="images code-image" src={codeImage} alt="coding" />
-        <img className="images branch-image" src={branchImage} alt="branches" />
-        <img className="images gear-image" src={gearImage} alt="gears" />
+        <div className="image-container">
+          <img src={jsIcon} alt="javascript" />
+        </div>
+        <div className="image-container">
+          <img src={tsIcon} alt="typescript" />
+        </div>
+        <div className="image-container">
+          <img src={pythonIcon} alt="python" />
+        </div>
+        <div className="image-container">
+          <img src={vueIcon} alt="vue" />
+        </div>
+        <div className="image-container">
+          <img src={reactIcon} alt="react" />
+        </div>
+        <div className="image-container">
+          <img src={djangoIcon} alt="django" />
+        </div>
       </div>
     </div>
   )

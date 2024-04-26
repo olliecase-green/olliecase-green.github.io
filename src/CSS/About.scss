@@ -4,7 +4,7 @@
   grid-area: about;
   display: grid;
   grid-template-areas: "main extra";
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
   border-bottom: 1px solid $dark-colour;
 }
 
@@ -20,8 +20,17 @@
 .extra-content {
   grid-area: extra;
   border-left: 1px solid $dark-colour;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.extra-content img {
+  width: 50px;
+}
+
+.image-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -109,8 +118,4 @@
 
 .lets-talk-button:hover span {
   color: $black;
-}
-
-.images {
-  height: 100px;
 }
