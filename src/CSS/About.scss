@@ -20,6 +20,9 @@
 .extra-content {
   grid-area: extra;
   border-left: 1px solid $dark-colour;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {

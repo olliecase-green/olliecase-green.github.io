@@ -1,37 +1,55 @@
+import { useState } from "react"
 import "../CSS/Experience.scss"
+import { WorkPlace } from "../Config/types"
 
 function Experience() {
-  const workPlaces = ["Hullabalook", "Sigma Labs XYZ", "MHA Macintyre Hudson"]
+  const [currentWork, setCurrentWork] = useState<WorkPlace>("Hullabalook")
+  const workPlaces: WorkPlace[] = [
+    "Hullabalook",
+    "Sigma Labs XYZ",
+    "MHA MacIntyre Hudson",
+  ]
 
   function createWorkButtons() {
-    return workPlaces.map((place) => <button key={place}>{place}</button>)
+    return workPlaces.map((place) => (
+      <button onClick={() => handleClick(place)} key={place}>
+        {place}
+      </button>
+    ))
+  }
+
+  function handleClick(workPlace: WorkPlace) {
+    setCurrentWork(workPlace)
+    console.log(workPlace)
   }
 
   return (
     <div className="experience-container">
       <div className="work-list">{createWorkButtons()}</div>
-      <div className="work-info">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        - Example 1 - Example 1 - Example 1
-      </div>
+      {currentWork === "Hullabalook" && (
+        <div className="work-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </div>
+      )}
+      {currentWork === "Sigma Labs XYZ" && (
+        <div className="work-info">
+          Sigma Labs Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat.
+        </div>
+      )}
+      {currentWork === "MHA MacIntyre Hudson" && (
+        <div className="work-info">
+          MHA MacIntyre Hudson Sigma Labs Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      )}
     </div>
   )
 }
