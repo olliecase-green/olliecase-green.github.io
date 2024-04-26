@@ -11,17 +11,12 @@
 .links-container {
   position: sticky;
   top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.cv,
-.github,
-.linkedin {
-  height: 40px;
+.links-container a > img {
+  cursor: pointer;
+  margin: 25px 0 0 0;
   width: 40px;
-  border: 1px solid $dark-colour;
-  margin: 10px 0 0 0;
-  background-color: $mid-colour;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
