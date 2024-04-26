@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="links-container">
-        <a href="/">
+        <a href="/my-portfolio">
           <img src={cvImage} alt="cv" />
         </a>
         <a

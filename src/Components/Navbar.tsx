@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
+import { NavbarProps } from "../Config/types"
 import "../CSS/Navbar.scss"
 
-function Navbar() {
+function Navbar(props: NavbarProps) {
   const [prevScrollPosition, setPrevScrollPosition] = useState(window.scrollY)
   const [visible, setVisible] = useState(true)
   const options = ["about", "experience", "projects", "contact"]
