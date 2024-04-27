@@ -36,7 +36,7 @@ function Navbar(props: NavbarProps) {
 
   return (
     <div className={navbarClass}>
-      <div className="navbar-name">olliecasegreen</div>
+      {/* <div className="navbar-name">olliecasegreen</div> */}
       <div className="navbar-options">{createNavbarOptions()}</div>
     </div>
   )

@@ -1,6 +1,9 @@
 import { useState } from "react"
-import "../CSS/Experience.scss"
 import { WorkPlace } from "../Config/types"
+import Hullabalook from "./Hullabalook"
+import SigmaLabs from "./SigmaLabs"
+import MHA from "./MHA"
+import "../CSS/Experience.scss"
 
 function Experience() {
   const [currentWork, setCurrentWork] = useState<WorkPlace>("Hullabalook")
@@ -12,7 +15,11 @@ function Experience() {
 
   function createWorkButtons() {
     return workPlaces.map((place) => (
-      <button onClick={() => handleClick(place)} key={place}>
+      <button
+        className={place === currentWork ? "selected" : ""}
+        onClick={() => handleClick(place)}
+        key={place}
+      >
         {place}
       </button>
     ))
@@ -20,36 +27,17 @@ function Experience() {
 
   function handleClick(workPlace: WorkPlace) {
     setCurrentWork(workPlace)
-    console.log(workPlace)
   }
 
   return (
     <div className="experience-container">
-      <div className="work-list">{createWorkButtons()}</div>
-      {currentWork === "Hullabalook" && (
-        <div className="work-info">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </div>
-      )}
-      {currentWork === "Sigma Labs XYZ" && (
-        <div className="work-info">
-          Sigma Labs Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat.
-        </div>
-      )}
-      {currentWork === "MHA MacIntyre Hudson" && (
-        <div className="work-info">
-          MHA MacIntyre Hudson Sigma Labs Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
-      )}
+      <h2 className="experience-title">Work Experience</h2>
+      <div className="work-container">
+        <div className="work-list">{createWorkButtons()}</div>
+        {currentWork === "Hullabalook" && <Hullabalook />}
+        {currentWork === "Sigma Labs XYZ" && <SigmaLabs />}
+        {currentWork === "MHA MacIntyre Hudson" && <MHA />}
+      </div>
     </div>
   )
 }
