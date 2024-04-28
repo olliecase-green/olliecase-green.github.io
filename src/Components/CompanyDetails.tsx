@@ -22,7 +22,6 @@ function CompanyDetails(props: CompanyDetailsProps) {
           <span className="company">{name}</span>
         </a>
       </div>
-      <button onClick={() => console.log(props.currentWork)}>click me</button>
       <div className="work-dates">{dates}</div>
       <ul>{createExperienceList()}</ul>
     </div>
