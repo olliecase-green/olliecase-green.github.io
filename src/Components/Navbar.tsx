@@ -25,17 +25,18 @@ function Navbar() {
   function createNavbarOptions() {
     return options.map((option) => {
       return (
-        <div key={option} className="navbar-item">
-          <div className="navbar-item-background"></div>
-          <span>{option}</span>
-        </div>
+        <a href={`/${option}`}>
+          <button key={option} className="navbar-button">
+            <div className="navbar-item-background"></div>
+            <span>{option}</span>
+          </button>
+        </a>
       )
     })
   }
 
   return (
     <div className={navbarClass}>
-      {/* <div className="navbar-name">olliecasegreen</div> */}
       <div className="navbar-options">{createNavbarOptions()}</div>
     </div>
   )

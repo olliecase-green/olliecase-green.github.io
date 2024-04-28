@@ -1,7 +1,7 @@
 @import "variables";
 
 .navbar,
-.navbar-item {
+.navbar-button {
   display: flex;
   align-items: center;
 }
@@ -29,13 +29,14 @@
   margin: 0 0 0 10px;
 }
 
-.navbar-item {
+.navbar-button {
   font-size: 13px;
   text-transform: uppercase;
-  color: $dark-colour;
-  border-top: 1px solid $dark-colour;
-  border-left: 1px solid $dark-colour;
-  border-right: 1px solid $dark-colour;
+  color: #002a32;
+  border: none;
+  border-top: 1px solid #002a32;
+  border-left: 1px solid #002a32;
+  border-right: 1px solid #002a32;
   cursor: pointer;
   justify-content: center;
   position: relative;
@@ -43,33 +44,42 @@
   width: 110px;
   height: 50px;
   padding: 3px;
-  background-color: $white;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
-.navbar-item span {
+.navbar-button span {
   color: $white;
   position: relative;
   transition: 0.2s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
-.navbar-item:hover span {
+.navbar-button:hover {
+  text-decoration: none;
+}
+
+.navbar-button:hover span {
   color: $black;
 }
 
-.navbar-item::before,
-.navbar-item::after {
+.navbar-button::before,
+.navbar-button::after {
   position: absolute;
   width: 110px;
   height: 50px;
   padding: 3px;
 }
 
-.navbar-item::before {
+.navbar-button::before {
   content: "";
   background-color: $dark-colour;
   transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
 }
 
-.navbar-item:hover::before {
+.navbar-button:hover::before {
   transform: translate3d(0, -100%, 0);
+}
+
+.navbar-options a {
+  text-decoration: none;
 }

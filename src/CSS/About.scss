@@ -22,7 +22,7 @@
 
 .extra-content {
   grid-area: extra;
-  border-left: 1px solid $dark-colour;
+  // border-left: 1px solid $dark-colour;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

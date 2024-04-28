@@ -19,7 +19,7 @@ function About() {
           <span>Let's talk!</span>
         </button>
       </div>
-      <div className="extra-content">
+      {/* <div className="extra-content">
         <div className="image-container">
           <img src={jsIcon} alt="javascript" />
         </div>
@@ -38,7 +38,7 @@ function About() {
         <div className="image-container">
           <img src={djangoIcon} alt="django" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
