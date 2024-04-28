@@ -1,8 +1,6 @@
 import { useState } from "react"
 import { WorkPlace } from "../Config/types"
-import Hullabalook from "./Hullabalook"
-import SigmaLabs from "./SigmaLabs"
-import MHA from "./MHA"
+import CompanyDetails from "./CompanyDetails"
 import "../CSS/Experience.scss"
 
 function Experience() {
@@ -14,19 +12,23 @@ function Experience() {
   ]
 
   function createWorkButtons() {
-    return workPlaces.map((place) => (
+    return workPlaces.map((workPlace) => (
       <button
-        className={place === currentWork ? "selected" : ""}
-        onClick={() => handleClick(place)}
-        key={place}
+        className={workPlace === currentWork ? "selected" : ""}
+        onClick={() => setCurrentWork(workPlace)}
+        key={workPlace}
       >
-        {place}
+        {workPlace}
       </button>
     ))
   }
 
-  function handleClick(workPlace: WorkPlace) {
-    setCurrentWork(workPlace)
+  function createWorkExperienceDetails() {
+    return workPlaces.map((workPlace) => {
+      if (currentWork === workPlace) {
+        return <CompanyDetails key={workPlace} currentWork={currentWork} />
+      } else return <></>
+    })
   }
 
   return (
@@ -34,9 +36,7 @@ function Experience() {
       <h2 className="experience-title">Work Experience</h2>
       <div className="work-container">
         <div className="work-list">{createWorkButtons()}</div>
-        {currentWork === "Hullabalook" && <Hullabalook />}
-        {currentWork === "Sigma Labs XYZ" && <SigmaLabs />}
-        {currentWork === "MHA MacIntyre Hudson" && <MHA />}
+        {createWorkExperienceDetails()}
       </div>
     </div>
   )

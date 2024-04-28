@@ -5,6 +5,14 @@ export type WorkPlace =
   | "MHA MacIntyre Hudson"
 
 // Interfaces
-export interface NavbarProps {
-  // scrollToSection: (ref: React.MutableRefObject<HTMLDivElement>) => void
+export interface CompanyDetailsProps {
+  currentWork: WorkPlace
+}
+
+export interface workExperienceDetail {
+  name: WorkPlace
+  link: string
+  dates: string
+  jobTitle: string
+  experiencePoints: string[]
 }

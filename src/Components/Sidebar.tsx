@@ -1,7 +1,7 @@
 import "../CSS/Sidebar.scss"
-import cvImage from "../assets/cvImage.jpg"
-import githubImage from "../assets/githubImage.png"
-import linkedinImage from "../assets/linkedinImage.jpg"
+import cvImage from "../Assets/cvImage.jpg"
+import githubImage from "../Assets/githubImage.png"
+import linkedinImage from "../Assets/linkedinImage.jpg"
 
 function Sidebar() {
   return (

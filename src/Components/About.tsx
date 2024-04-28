@@ -1,10 +1,10 @@
 import "../CSS/About.scss"
-import jsIcon from "../assets/jsIcon.png"
-import tsIcon from "../assets/tsIcon.png"
-import pythonIcon from "../assets/pythonIcon.png"
-import vueIcon from "../assets/vueIcon.png"
-import reactIcon from "../assets/reactIcon.png"
-import djangoIcon from "../assets/djangoIcon.png"
+import jsIcon from "../Assets/jsIcon.png"
+import tsIcon from "../Assets/tsIcon.png"
+import pythonIcon from "../Assets/pythonIcon.png"
+import vueIcon from "../Assets/vueIcon.png"
+import reactIcon from "../Assets/reactIcon.png"
+import djangoIcon from "../Assets/djangoIcon.png"
 
 function About() {
   return (
