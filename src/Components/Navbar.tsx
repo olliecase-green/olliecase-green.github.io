@@ -25,7 +25,7 @@ function Navbar() {
   function createNavbarOptions() {
     return options.map((option) => {
       return (
-        <a href={`/${option}`}>
+        <a href={option === "about" ? "/" : `/${option}`}>
           <button key={option} className="navbar-button">
             <div className="navbar-item-background"></div>
             <span>{option}</span>
