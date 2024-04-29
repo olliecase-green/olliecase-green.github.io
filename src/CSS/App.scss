@@ -1,8 +1,6 @@
 @import "variables";
 
 .App {
-  background: $light-colour;
-  // display: grid;
   grid-template-areas:
     "sidebar navbar"
     "sidebar about"

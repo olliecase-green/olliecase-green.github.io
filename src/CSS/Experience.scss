@@ -3,13 +3,12 @@
 .experience-container {
   padding: 50px 175px;
   grid-area: experience;
-  border-bottom: 1px solid $dark-colour;
 }
 
 .experience-title {
   font-size: 32px;
   margin: 0 0 35px 0;
-  color: $title;
+  color: $white;
 }
 
 .work-container {
@@ -32,7 +31,8 @@
   cursor: pointer;
   height: 50px;
   width: 200px;
-  background-color: $light-colour;
+  background-color: $dark-colour;
+  color: $white;
   border: none;
   border-bottom: 1px solid $dark-colour;
   transition: all 0.2s;
@@ -40,25 +40,25 @@
 
 .work-list button:hover,
 .work-list .selected {
-  background-color: $dark-colour;
-  color: $white;
+  background-color: $white;
+  color: $black;
 }
 
 .work-title {
   font-weight: bold;
   font-size: 22px;
   margin: 0 0 10px 0;
-  color: $title;
+  color: $light-colour;
 }
 
 .work-title a {
-  color: $dark-colour;
+  color: $white;
   text-decoration: none;
 }
 
 .work-dates {
   font-family: $secondary-font;
-  color: $dark-colour;
+  color: $light-colour;
   font-size: 18px;
   font-weight: bold;
 }

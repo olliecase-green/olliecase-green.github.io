@@ -1,6 +1,12 @@
 @import "variables";
 
 .contact-container {
+  padding: 50px 175px;
   grid-area: contact;
-  padding: 500px 50px 50px 50px;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin: 0 0 35px 0;
+  color: $white;
 }

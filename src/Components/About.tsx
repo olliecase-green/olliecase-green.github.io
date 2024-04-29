@@ -1,10 +1,4 @@
 import "../CSS/About.scss"
-import jsIcon from "../Assets/jsIcon.png"
-import tsIcon from "../Assets/tsIcon.png"
-import pythonIcon from "../Assets/pythonIcon.png"
-import vueIcon from "../Assets/vueIcon.png"
-import reactIcon from "../Assets/reactIcon.png"
-import djangoIcon from "../Assets/djangoIcon.png"
 
 function About() {
   return (
@@ -14,31 +8,29 @@ function About() {
         <h2 className="subtitle">
           Software Engineer with two years of commercial experience.
         </h2>
+        <div className="about-text">
+          Welcome to my portfolio! "Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div className="about-text">
+          Welcome to my portfolio! "Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
         <button className="lets-talk-button">
           <div className="button-background"></div>
           <span>Let's talk!</span>
         </button>
       </div>
-      {/* <div className="extra-content">
-        <div className="image-container">
-          <img src={jsIcon} alt="javascript" />
-        </div>
-        <div className="image-container">
-          <img src={tsIcon} alt="typescript" />
-        </div>
-        <div className="image-container">
-          <img src={pythonIcon} alt="python" />
-        </div>
-        <div className="image-container">
-          <img src={vueIcon} alt="vue" />
-        </div>
-        <div className="image-container">
-          <img src={reactIcon} alt="react" />
-        </div>
-        <div className="image-container">
-          <img src={djangoIcon} alt="django" />
-        </div>
-      </div> */}
     </div>
   )
 }

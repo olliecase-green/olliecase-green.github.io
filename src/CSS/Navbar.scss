@@ -32,11 +32,11 @@
 .navbar-button {
   font-size: 13px;
   text-transform: uppercase;
-  color: #002a32;
+  color: $dark-colour;
   border: none;
-  border-top: 1px solid #002a32;
-  border-left: 1px solid #002a32;
-  border-right: 1px solid #002a32;
+  border-top: 1px solid $dark-colour;
+  border-left: 1px solid $dark-colour;
+  border-right: 1px solid $dark-colour;
   cursor: pointer;
   justify-content: center;
   position: relative;
@@ -44,7 +44,6 @@
   width: 110px;
   height: 50px;
   padding: 3px;
-  background-color: #fff;
   box-sizing: border-box;
 }
 

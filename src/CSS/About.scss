@@ -2,33 +2,14 @@
 
 .about-container {
   grid-area: about;
-  display: grid;
-  grid-template-areas: "main extra";
-  grid-template-columns: 5fr 2fr;
-  border-bottom: 1px solid $dark-colour;
 }
 
 .main-content {
-  padding: 50px 100px 200px 100px;
-}
-
-.extra-content {
-  padding: 50px;
+  padding: 50px 250px 200px 100px;
 }
 
 .main-content {
   grid-area: main;
-}
-
-.extra-content {
-  grid-area: extra;
-  // border-left: 1px solid $dark-colour;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.extra-content img {
-  width: 50px;
 }
 
 .image-container {
@@ -41,12 +22,12 @@
   font-size: 64px;
   font-weight: bold;
   margin: 0;
-  color: $title;
+  color: $light-colour;
 }
 
 .subtitle {
   font-size: 32px;
-  margin: 0 0 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .about-text {
@@ -59,11 +40,11 @@
   width: 200px;
   font-size: 24px;
   font-family: $secondary-font;
-  background-color: $dark-colour;
   border: 1px solid $dark-colour;
   color: $white;
   font-weight: bold;
   position: relative;
+  margin: 30px 0 0 0;
 }
 
 .button-background {

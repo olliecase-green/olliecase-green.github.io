@@ -1,6 +1,12 @@
 @import "variables";
 
 .projects-container {
-  padding: 1000px 50px 50px 50px;
+  padding: 50px 175px;
   grid-area: projects;
+}
+
+.projects-title {
+  font-size: 32px;
+  margin: 0 0 35px 0;
+  color: $white;
 }

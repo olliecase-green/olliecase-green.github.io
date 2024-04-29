@@ -3,6 +3,7 @@ import "../CSS/Projects.scss"
 function Projects() {
   return (
     <div className="projects-container">
+      <h2 className="projects-title">Projects</h2>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
