@@ -17,7 +17,7 @@ function CompanyDetails(props: CompanyDetailsProps) {
   return (
     <div className="work-info">
       <div className="work-title">
-        {jobTitle} @{" "}
+        <span>{jobTitle}</span> @{" "}
         <a rel="noopener noreferrer" target="_blank" href={link}>
           <span className="company">{name}</span>
         </a>

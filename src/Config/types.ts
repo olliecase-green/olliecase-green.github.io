@@ -4,6 +4,8 @@ export type WorkPlace =
   | "Sigma Labs XYZ"
   | "MHA MacIntyre Hudson"
 
+export type NavbarOption = "about" | "experience" | "projects" | "contact"
+
 // Interfaces
 export interface CompanyDetailsProps {
   currentWork: WorkPlace

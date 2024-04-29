@@ -2,10 +2,11 @@
 
 .contact-container {
   padding: 50px 175px;
+  font-size: $page-text;
 }
 
 .contact-title {
-  font-size: 32px;
+  font-size: $page-heading;
   margin: 0 0 35px 0;
   color: $white;
 }

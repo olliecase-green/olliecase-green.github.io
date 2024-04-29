@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
+import { NavbarOption } from "../Config/types"
 import "../CSS/Navbar.scss"
 
 function Navbar() {
   const [prevScrollPosition, setPrevScrollPosition] = useState(window.scrollY)
   const [visible, setVisible] = useState(true)
-  const options = ["about", "experience", "projects", "contact"]
+  const options: NavbarOption[] = ["about", "experience", "projects", "contact"]
   const navbarClass = visible ? "navbar visible" : "navbar hidden"
 
   useEffect(() => {

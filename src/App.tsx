@@ -4,6 +4,7 @@ import About from "./Components/About"
 import Experience from "./Components/Experience"
 import Projects from "./Components/Projects"
 import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
 import "./CSS/App.scss"
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   )
 }
