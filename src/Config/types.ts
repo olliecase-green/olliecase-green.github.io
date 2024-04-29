@@ -5,6 +5,7 @@ export type WorkPlace =
   | "MHA MacIntyre Hudson"
 
 export type NavbarOption = "about" | "experience" | "projects" | "contact"
+export type Joke = string | null
 
 // Interfaces
 export interface CompanyDetailsProps {
