@@ -9,7 +9,6 @@
 .navbar {
   justify-content: flex-end;
   border-bottom: 1px solid $dark-colour;
-  grid-area: navbar;
   position: sticky;
   top: 0;
   backdrop-filter: blur(8px);

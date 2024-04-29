@@ -1,7 +1,5 @@
-import { useRef } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./Components/Navbar"
-import Sidebar from "./Components/Sidebar"
 import About from "./Components/About"
 import Experience from "./Components/Experience"
 import Projects from "./Components/Projects"
@@ -13,9 +11,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        {/* <Sidebar /> */}
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
