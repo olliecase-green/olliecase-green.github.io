@@ -16,12 +16,13 @@ function About() {
           Software Engineer with two years of commercial experience.
         </h2>
         <div className="about-text">
-          Welcome to my portfolio! I am a London-based Software Engineer with
-          commercial experience using Vue.js, JavaScript, TypeScript and Python.
-          I am ideally looking for Frontend and Full-stack Developer positions
-          in my next position. I am also very confident working with React from
-          my full-time coding bootcamp, Sigma Labs XYZ, and Django from my
-          personal projects - please check out my projects in the navbar above!
+          Welcome to my portfolio! This site is still a work-in-progress. I am a
+          London-based Software Engineer with commercial experience using
+          Vue.js, JavaScript, TypeScript and Python. I am ideally looking for
+          Frontend and Full-stack Developer positions in my next position. I am
+          also very confident working with React from my full-time coding
+          bootcamp, Sigma Labs XYZ, and Django from my personal projects -
+          please check out my projects in the navbar above!
         </div>
         <div className="about-text">
           In my spare time, I have been teaching myself Django for backend
