@@ -13,6 +13,7 @@ function Footer() {
     <div className="footer-container">
       <button onClick={handleClick}>Tell me a joke</button>
       <div>{joke}</div>
+      {joke && <div>Did you know this joke was fetched from free joke api</div>}
     </div>
   )
 }
