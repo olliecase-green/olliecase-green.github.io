@@ -5,13 +5,16 @@ function Contact() {
     <div className="contact-container">
       <h2 className="contact-title">Contact</h2>
       <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <span className="contact-detail">Email: </span>
+        olivercase-green@hotmail.co.uk
+      </div>
+      <div>
+        <span className="contact-detail">GitHub: </span>
+        github.com/olliecase-green
+      </div>
+      <div>
+        <span className="contact-detail">LinkedIn: </span>
+        linkedin.com/in/oliver-case-green-40001416a/
       </div>
     </div>
   )

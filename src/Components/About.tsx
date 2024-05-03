@@ -48,7 +48,11 @@ function About() {
               whether dark mode is activated, and update the styling in each
               component accordingly.
             </li>
-            <li>The site needs mobile and smaller screen size styling</li>
+            <li>The site needs mobile and smaller screen size styling.</li>
+            <li>
+              The content in Projects and Contact will be updated and the
+              styling improved.
+            </li>
           </ul>
         </div>
         <div className="about-text">
