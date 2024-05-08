@@ -10,7 +10,9 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 60) {
+      const isDesktopScreenSize =
+        window.scrollY > 60 && window.innerWidth > 1024
+      if (isDesktopScreenSize) {
         const currScrollPosition = window.scrollY
         const visible = prevScrollPosition > currScrollPosition
         setVisible(visible)

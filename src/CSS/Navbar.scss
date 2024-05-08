@@ -9,8 +9,6 @@
 .navbar {
   justify-content: flex-end;
   border-bottom: 1px solid $dark-colour;
-  position: sticky;
-  top: 0;
   backdrop-filter: blur(8px);
   z-index: 100;
   transition: transform 0.5s;
@@ -80,4 +78,11 @@
 
 .navbar-options a {
   text-decoration: none;
+}
+
+@media screen and (min-width: $desktop) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
 }
