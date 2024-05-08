@@ -2,15 +2,21 @@
 
 .projects-container {
   padding: 50px 175px 200px 175px;
-  font-size: $page-text;
+  font-size: 20px;
 }
 
 .projects-title {
-  font-size: $page-heading;
+  font-size: 38px;
   margin: 0 0 35px 0;
   color: $white;
 }
 
 .project-name {
   font-weight: bold;
+}
+
+@media screen and (max-width: $desktop) {
+  .projects-container {
+    padding: 50px;
+  }
 }

@@ -1,7 +1,7 @@
 @import "variables";
 
 .main-content {
-  padding: 50px 250px 200px 100px;
+  padding: 50px 30px;
 }
 
 .main-content {
@@ -15,19 +15,19 @@
 }
 
 .title {
-  font-size: $page-title;
+  font-size: 35px;
   font-weight: bold;
   margin: 0;
   color: $light-colour;
 }
 
 .subtitle {
-  font-size: $page-heading;
-  margin: 20px 0 40px 0;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .about-text {
-  font-size: $page-text;
+  font-size: 16px;
   margin: 20px 0 0 0;
 }
 
@@ -124,5 +124,44 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: $large-mobile) {
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin: 20px 0 40px 0;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .main-content {
+    padding: 50px;
+  }
+
+  .title {
+    font-size: 68px;
+  }
+
+  .subtitle {
+    font-size: 38px;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .main-content {
+    padding: 50px 250px 200px 100px;
   }
 }

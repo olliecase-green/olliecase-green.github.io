@@ -5,7 +5,7 @@
 }
 
 .experience-title {
-  font-size: $page-heading;
+  font-size: 38px;
   margin: 0 0 35px 0;
   color: $white;
 }
@@ -71,8 +71,14 @@
 }
 
 .work-info li {
-  font-size: $page-text;
+  font-size: 20px;
   margin: 0 0 10px 0;
   list-style-position: inside;
   text-align: justify;
+}
+
+@media screen and (max-width: $desktop) {
+  .experience-container {
+    padding: 50px 75px;
+  }
 }

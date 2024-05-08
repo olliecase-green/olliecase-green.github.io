@@ -1,9 +1,6 @@
 // Fonts
 $main-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 $secondary-font: Roboto Mono, monospace;
-$page-title: 68px;
-$page-heading: 38px;
-$page-text: 20px;
 $page-subtitle: 26px;
 
 // Colours
@@ -13,3 +10,8 @@ $mid-colour: #124e66;
 $light-colour: #748d92;
 $white: #d3d9d4;
 $title: #5c7082;
+
+// Breakpoints
+$large-mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
