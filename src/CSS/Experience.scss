@@ -1,35 +1,35 @@
 @import "variables";
 
 .experience-container {
-  padding: 50px 175px;
+  padding: 50px 30px;
 }
 
 .experience-title {
-  font-size: 38px;
-  margin: 0 0 35px 0;
+  font-size: 30px;
+  margin: 0 0 25px 0;
   color: $white;
 }
 
 .work-container {
   display: flex;
+  flex-direction: column;
 }
 
 .work-list {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .work-list button {
   font-family: $secondary-font;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   padding: 5px;
   margin: 0;
   border-radius: 0;
   cursor: pointer;
-  height: 50px;
-  width: 200px;
+  height: 40px;
+  width: 34%;
   background-color: $dark-colour;
   color: $white;
   border: none;
@@ -44,7 +44,7 @@
 }
 
 .work-title {
-  font-size: $page-subtitle;
+  font-size: 20px;
   margin: 0 0 10px 0;
   color: $light-colour;
 }
@@ -63,7 +63,7 @@
 }
 
 .work-info {
-  padding: 0 0 0 25px;
+  margin: 25px 0 0 0;
 }
 
 .work-info ul {
@@ -71,14 +71,60 @@
 }
 
 .work-info li {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0 0 10px 0;
   list-style-position: inside;
   text-align: justify;
 }
 
-@media screen and (max-width: $desktop) {
+@media screen and (min-width: $mobile) {
+  .experience-container {
+    padding: 50px 50px;
+  }
+
+  .experience-title {
+    margin: 0 0 35px 0;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .experience-title {
+    font-size: 38px;
+  }
+
+  .work-container {
+    flex-direction: row;
+  }
+
+  .work-list {
+    flex-direction: column;
+  }
+
   .experience-container {
     padding: 50px 75px;
+  }
+
+  .work-title {
+    font-size: 26px;
+  }
+
+  .work-info {
+    margin: 0 0 0 20px;
+  }
+
+  .work-info li {
+    font-size: 20px;
+  }
+
+  .work-list button {
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .experience-container {
+    padding: 50px 175px;
   }
 }
