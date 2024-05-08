@@ -7,3 +7,7 @@ body {
   font-family: $main-font;
   font-weight: 400;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

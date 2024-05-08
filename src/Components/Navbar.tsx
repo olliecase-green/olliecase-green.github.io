@@ -5,14 +5,16 @@ import "../CSS/Navbar.scss"
 function Navbar() {
   const [prevScrollPosition, setPrevScrollPosition] = useState(window.scrollY)
   const [visible, setVisible] = useState(true)
+  const [showOptions, setShowOptions] = useState(false)
   const options: NavbarOption[] = ["about", "experience", "projects", "contact"]
-  const navbarClass = visible ? "navbar visible" : "navbar hidden"
+  const navbarClass = visible ? "navbar" : "navbar hidden"
+  const optionsClass = showOptions
+    ? "navbar-options"
+    : "navbar-options options-hidden"
 
   useEffect(() => {
     const handleScroll = () => {
-      const isDesktopScreenSize =
-        window.scrollY > 60 && window.innerWidth > 1024
-      if (isDesktopScreenSize) {
+      if (window.scrollY > 60) {
         const currScrollPosition = window.scrollY
         const visible = prevScrollPosition > currScrollPosition
         setVisible(visible)
@@ -25,11 +27,19 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [prevScrollPosition])
 
+  useEffect(() => {
+    document.body.classList.toggle("no-scroll", showOptions)
+  }, [showOptions])
+
   function createNavbarOptions() {
     return options.map((option) => {
       return (
         <a href={option === "about" ? "/" : `#/${option}`}>
-          <button key={option} className="navbar-button">
+          <button
+            key={option}
+            className="navbar-button"
+            onClick={() => setShowOptions(false)}
+          >
             <div className="navbar-item-background"></div>
             <span>{option}</span>
           </button>
@@ -40,7 +50,10 @@ function Navbar() {
 
   return (
     <div className={navbarClass}>
-      <div className="navbar-options">{createNavbarOptions()}</div>
+      <div className="hamburger" onClick={() => setShowOptions(!showOptions)}>
+        Options
+      </div>
+      <div className={optionsClass}>{createNavbarOptions()}</div>
     </div>
   )
 }

@@ -1,25 +1,29 @@
 @import "variables";
 
-.navbar,
 .navbar-button {
   display: flex;
   align-items: center;
 }
 
 .navbar {
-  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   border-bottom: 1px solid $dark-colour;
   backdrop-filter: blur(8px);
   z-index: 100;
   transition: transform 0.5s;
+  height: 50px;
+  position: sticky;
+  top: 0;
 }
 
 .hidden {
   transform: translateY(-100%);
 }
 
-.navbar-options {
-  display: flex;
+.options-hidden {
+  display: none;
 }
 
 .navbar-name {
@@ -76,13 +80,36 @@
   transform: translate3d(0, -100%, 0);
 }
 
+.navbar-options {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+}
+
 .navbar-options a {
   text-decoration: none;
 }
 
-@media screen and (min-width: $desktop) {
-  .navbar {
-    position: sticky;
-    top: 0;
+.hamburger {
+  margin: 0 12px 0 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $tablet) {
+  .navbar-options {
+    position: static;
+    display: flex;
+    justify-content: end;
   }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  // .navbar {
+  //   position: sticky;
+  //   top: 0;
+  // }
 }
