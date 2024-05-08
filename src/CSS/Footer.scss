@@ -2,19 +2,20 @@
 
 .footer-container {
   height: 100px;
-  background: $dark-colour;
+  background: $black;
   margin-top: 100px;
   position: relative;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid $dark-colour;
 }
 
 .joke-button {
   border: none;
   padding: 10px;
-  background: $black;
+  background: $dark-colour;
   color: $white;
   font-family: $secondary-font;
   height: 50px;
@@ -23,7 +24,8 @@
 }
 
 .joke-button:hover {
-  background-color: $light-colour;
+  background-color: $white;
+  color: $black;
 }
 
 .joke-info {
