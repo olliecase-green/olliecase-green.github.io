@@ -17,6 +17,7 @@
 
 .work-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -29,7 +30,7 @@
   border-radius: 0;
   cursor: pointer;
   height: 40px;
-  width: 34%;
+  width: 100%;
   background-color: $dark-colour;
   color: $white;
   border: none;
@@ -84,6 +85,14 @@
 
   .experience-title {
     margin: 0 0 35px 0;
+  }
+
+  .work-list {
+    flex-direction: row;
+  }
+
+  .work-list button {
+    width: 34%;
   }
 }
 

@@ -34,8 +34,8 @@
 .lets-talk-button {
   cursor: pointer;
   height: 44px;
-  width: 200px;
-  font-size: 24px;
+  width: 140px;
+  font-size: 16px;
   font-family: $secondary-font;
   border: 1px solid $dark-colour;
   color: $white;
@@ -139,6 +139,11 @@
 
   .about-text {
     font-size: 18px;
+  }
+
+  .lets-talk-button {
+    width: 200px;
+    font-size: 20px;
   }
 }
 
