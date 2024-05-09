@@ -53,7 +53,10 @@ function Navbar() {
         ☰
       </div>
       <div className={optionsClass}>{createNavbarOptions()}</div>
-      <div className={backgroundTrayClass}></div>
+      <div
+        className={backgroundTrayClass}
+        onClick={() => setShowOptions(false)}
+      ></div>
     </div>
   )
 }
