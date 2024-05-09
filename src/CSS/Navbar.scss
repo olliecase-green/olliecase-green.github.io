@@ -123,4 +123,8 @@
   .hamburger {
     display: none;
   }
+
+  .options-hidden {
+    transform: translateX(0);
+  }
 }
