@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import BodyClassToggle from "./BodyClassToggle"
 import { NavbarOption } from "../Config/types"
 import "../CSS/Navbar.scss"
 
@@ -7,10 +8,11 @@ function Navbar() {
   const [visible, setVisible] = useState(true)
   const [showOptions, setShowOptions] = useState(false)
   const options: NavbarOption[] = ["about", "experience", "projects", "contact"]
-  const navbarClass = visible ? "navbar" : "navbar hidden"
+  const navbarClass = visible ? "navbar" : "navbar navbar-hidden"
   const optionsClass = showOptions
     ? "navbar-options"
     : "navbar-options options-hidden"
+  const backgroundTrayClass = showOptions ? "bg-tray" : "bg-tray bg-tray-hidden"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,10 +28,6 @@ function Navbar() {
 
     return () => window.removeEventListener("scroll", handleScroll)
   }, [prevScrollPosition])
-
-  useEffect(() => {
-    document.body.classList.toggle("no-scroll", showOptions)
-  }, [showOptions])
 
   function createNavbarOptions() {
     return options.map((option) => {
@@ -50,10 +48,12 @@ function Navbar() {
 
   return (
     <div className={navbarClass}>
+      <BodyClassToggle showOptions={showOptions} />
       <div className="hamburger" onClick={() => setShowOptions(!showOptions)}>
-        Options
+        ☰
       </div>
       <div className={optionsClass}>{createNavbarOptions()}</div>
+      <div className={backgroundTrayClass}></div>
     </div>
   )
 }

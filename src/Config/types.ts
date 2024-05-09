@@ -19,3 +19,7 @@ export interface workExperienceDetail {
   jobTitle: string
   experiencePoints: string[]
 }
+
+export interface BodyClassToggleProps {
+  showOptions: boolean
+}

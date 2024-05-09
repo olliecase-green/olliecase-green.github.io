@@ -11,19 +11,18 @@
   justify-content: end;
   border-bottom: 1px solid $dark-colour;
   backdrop-filter: blur(8px);
-  z-index: 100;
   transition: transform 0.5s;
   height: 50px;
   position: sticky;
   top: 0;
 }
 
-.hidden {
+.navbar-hidden {
   transform: translateY(-100%);
 }
 
 .options-hidden {
-  display: none;
+  transform: translateX(100%);
 }
 
 .navbar-name {
@@ -84,6 +83,8 @@
   position: absolute;
   right: 0px;
   top: 50px;
+  transition: 0.5s ease-in-out;
+  z-index: 3;
 }
 
 .navbar-options a {
@@ -93,6 +94,23 @@
 .hamburger {
   margin: 0 12px 0 0;
   cursor: pointer;
+  font-size: 30px;
+}
+
+.bg-tray {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+
+.bg-tray-hidden {
+  opacity: 0;
 }
 
 @media screen and (min-width: $tablet) {
