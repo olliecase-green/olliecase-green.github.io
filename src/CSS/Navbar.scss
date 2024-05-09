@@ -83,7 +83,7 @@
   position: absolute;
   right: 0px;
   top: 50px;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   z-index: 3;
 }
 
@@ -105,12 +105,10 @@
   position: absolute;
   left: 0;
   top: 50px;
-  transition: opacity 0.5s ease;
-  z-index: 2;
 }
 
 .bg-tray-hidden {
-  opacity: 0;
+  display: none;
 }
 
 @media screen and (min-width: $tablet) {
