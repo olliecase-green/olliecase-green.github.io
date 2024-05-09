@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom"
+import ScrollToTop from "./Components/ScrollToTop"
 import Navbar from "./Components/Navbar"
 import About from "./Components/About"
 import Experience from "./Components/Experience"
@@ -7,11 +8,10 @@ import Contact from "./Components/Contact"
 import Footer from "./Components/Footer"
 import "./CSS/App.scss"
 
-// See if can use context api for light / dark mode
-
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <Routes>

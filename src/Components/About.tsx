@@ -66,7 +66,8 @@ function About() {
         </button>
         {letsTalk && (
           <div className="lets-talk-div">
-            This button will open up an email to my email address from the user
+            When finished, this button will open up an email to my email address
+            from the user
           </div>
         )}
       </div>
