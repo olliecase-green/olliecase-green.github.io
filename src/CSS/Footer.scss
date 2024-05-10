@@ -1,12 +1,13 @@
 @import "variables";
 
-.footer-container {
-  height: 100px;
+.button-container {
+  height: 80px;
   background: $black;
   margin-top: 100px;
   position: relative;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top: 1px solid $dark-colour;
@@ -21,6 +22,7 @@
   height: 50px;
   cursor: pointer;
   transition: 0.5s;
+  font-size: 16px;
 }
 
 .joke-button:hover {
@@ -28,24 +30,22 @@
   color: $black;
 }
 
-.joke-info {
-  animation: fadeIn 3s;
+.joke {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 16px;
+  margin: 0 20px 20px 20px;
 }
 
-.joke {
-  font-size: 18px;
-  margin: 0 0 10px 0;
-}
-
-// Will need refactoring - store keyframe in variables
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@media screen and (min-width: $mobile) {
+  .joke {
+    font-size: 18px;
   }
-  100% {
-    opacity: 1;
+}
+
+@media screen and (min-width: $tablet) {
+  .joke {
+    font-size: 20px;
   }
 }

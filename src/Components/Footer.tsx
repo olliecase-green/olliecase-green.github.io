@@ -1,30 +1,29 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Joke } from "../Config/types"
+import { fetchJoke } from "../Connectors/jokeApiConnector"
 import "../CSS/Footer.scss"
 
 function Footer() {
   const [joke, setJoke] = useState<Joke>(null)
 
-  function handleClick() {
-    setJoke("Why did the chicken cross the road? To get to the other side")
+  async function handleClick() {
+    const joke = await fetchJoke()
+    setJoke(joke)
   }
 
   return (
-    <div className="footer-container">
-      {joke ? (
-        <div className="joke-info">
-          <div className="joke">{joke}</div>
-          <div>
-            This joke is hard-coded at the moment but will soon be fetched from
-            a free api
-          </div>
-        </div>
-      ) : (
+    <>
+      <div className="button-container">
         <button className="joke-button" onClick={handleClick}>
-          Tell me a joke
+          {joke ? (
+            <span>Tell me another joke</span>
+          ) : (
+            <span>Tell me a joke</span>
+          )}
         </button>
-      )}
-    </div>
+      </div>
+      {joke ? <div className="joke">{joke}</div> : <></>}
+    </>
   )
 }
 

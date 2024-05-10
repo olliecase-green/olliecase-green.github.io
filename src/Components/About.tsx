@@ -29,19 +29,21 @@ function About() {
           development, initially from online documentation and more recently
           from a book: <span className="django-text">Django 4 By Example</span>.
         </div>
-        <h3 className="additional-info">Site info and additional features</h3>
+        <h3 className="additional-info">Site info</h3>
         <div className="about-text">
           This website was built using React and TypeScript and is hosted on
           GitHub pages. To navigate between pages, I used React Router.
+        </div>
+        <h3 className="additional-info">Additional features</h3>
+        <div className="about-text">
           Additional features which are not yet finished include:
           <ul>
             <li>
-              The "Let's talk!" button which will open an email from the user to
-              me.
+              The Joke button at the bottom of the page fetches a joke from a
+              free joke api: https://icanhazdadjoke.com/api.
             </li>
             <li>
-              The Joke button at the bottom of the page will fetch a joke from a
-              free joke api: https://icanhazdadjoke.com/api.
+              The "Let's talk!" button will open an email from the user to me.
             </li>
             <li>
               There will be a light / dark mode option to change the theme of
@@ -49,14 +51,7 @@ function About() {
               whether dark mode is activated, and update the styling in each
               component accordingly.
             </li>
-            <li>The site needs mobile and smaller screen size styling.</li>
-            <li>
-              The content in Projects and Contact will be updated and the
-              styling improved.
-            </li>
           </ul>
-        </div>
-        <div className="about-text">
           The source code can be seen in my GitHub repository:
           https://github.com/olliecase-green/olliecase-green.github.io
         </div>
