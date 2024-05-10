@@ -23,3 +23,9 @@ export interface workExperienceDetail {
 export interface BodyClassToggleProps {
   showOptions: boolean
 }
+
+export interface JokeData {
+  id: string
+  joke?: string
+  status: number
+}

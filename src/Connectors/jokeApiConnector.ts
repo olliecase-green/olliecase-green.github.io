@@ -1,3 +1,5 @@
+import { JokeData } from "../Config/types"
+
 export async function fetchJoke() {
   try {
     const response = await fetch("https://icanhazdadjoke.com/", {
@@ -8,8 +10,9 @@ export async function fetchJoke() {
 
     if (!response.ok) throw new Error(`HTTP error - status: ${response.status}`)
 
-    const data = await response.json()
-    return data.joke
+    const data: JokeData = await response.json()
+    const joke = data.joke
+    return joke
   } catch (error) {
     console.error(error)
     window.alert("Error - check console for details")

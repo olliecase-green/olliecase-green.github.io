@@ -7,7 +7,7 @@ function Footer() {
   const [joke, setJoke] = useState<Joke>(null)
 
   async function handleClick() {
-    const joke = await fetchJoke()
+    const joke = (await fetchJoke()) as string
     setJoke(joke)
   }
 
