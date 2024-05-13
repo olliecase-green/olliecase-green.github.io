@@ -1,11 +1,13 @@
-import { useState } from "react"
 import "../CSS/About.scss"
 
 function About() {
-  const [letsTalk, setLetsTalk] = useState(false)
-
   function handleClick() {
-    setLetsTalk(true)
+    const emailAddress = "olivercase-green@hotmail.co.uk"
+    const subject = encodeURIComponent("Let's talk!")
+    const body = encodeURIComponent(
+      "Hi Ollie,\n\nI just saw your portfolio online..."
+    )
+    window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`
   }
 
   return (
@@ -43,9 +45,6 @@ function About() {
               free joke api: https://icanhazdadjoke.com/api.
             </li>
             <li>
-              The "Let's talk!" button will open an email from the user to me.
-            </li>
-            <li>
               There will be a light / dark mode option to change the theme of
               the site. I am planning to use React Context API to globally store
               whether dark mode is activated, and update the styling in each
@@ -59,12 +58,6 @@ function About() {
           <div className="button-background"></div>
           <span>Let's talk!</span>
         </button>
-        {letsTalk && (
-          <div className="lets-talk-div">
-            When finished, this button will open up an email to my email address
-            from the user
-          </div>
-        )}
       </div>
     </div>
   )

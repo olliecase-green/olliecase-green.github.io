@@ -65,6 +65,9 @@ function Navbar() {
         >
           <img src={linkedin} alt="linkedin" />
         </a>
+        <a href="../Assets/cv.pdf" rel="noopener noreferrer" target="_blank">
+          <span className="cv-span">CV</span>
+        </a>
       </div>
       <BodyClassToggle showOptions={showOptions} />
       <div className="hamburger" onClick={() => setShowOptions(!showOptions)}>
