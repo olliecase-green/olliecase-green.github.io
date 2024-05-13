@@ -2,23 +2,79 @@
 
 .projects-container {
   padding: 50px 30px 200px 30px;
-  font-size: 16px;
 }
 
 .projects-title {
   font-size: 30px;
-  margin: 0 0 35px 0;
+  margin: 0 0 50px 0;
   color: $white;
 }
 
 .project-name {
+  color: $light-colour;
+  font-size: 30px;
+}
+
+.details-container {
+  display: grid;
+  grid-template-areas: "left right";
+  grid-gap: 10px;
+  margin: 0 0 200px 0;
+}
+
+.details-container img {
+  height: 300px;
+  border-radius: 5px;
+  grid-area: left;
+}
+
+.project-details {
+  grid-area: right;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Weather {
+  grid-area: left;
+}
+
+.tech {
+  font-family: $secondary-font;
   font-weight: bold;
+  font-size: 18px;
+  color: $light-colour;
+}
+
+.project-points {
+  font-size: 18px;
+  background: $dark-colour;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 10px 0;
+  margin-left: -30px; // Overlap effect
+  box-shadow: 0 0 10px $black;
+}
+
+.Weather-container {
+  img {
+    grid-area: right;
+  }
+
+  .project-details {
+    text-align: left;
+  }
+
+  .project-points {
+    margin-left: 0;
+    margin-right: -30px; // Overlap effect
+  }
 }
 
 @media screen and (min-width: $tablet) {
   .projects-container {
     padding: 50px 50px 200px 50px;
-    font-size: 20px;
   }
 
   .projects-title {

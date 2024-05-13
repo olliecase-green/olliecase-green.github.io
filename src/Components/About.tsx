@@ -40,10 +40,7 @@ function About() {
         <div className="about-text">
           Additional features which are not yet finished include:
           <ul>
-            <li>
-              The Joke button at the bottom of the page fetches a joke from a
-              free joke api: https://icanhazdadjoke.com/api.
-            </li>
+            <li>The Projects section needs styling for mobiles.</li>
             <li>
               There will be a light / dark mode option to change the theme of
               the site. I am planning to use React Context API to globally store

@@ -1,9 +1,23 @@
-import { WorkExperienceDetail, WorkPlace } from "../Config/types"
+import {
+  WorkExperienceDetail,
+  WorkPlace,
+  ProjectDetail,
+  Project,
+} from "../Config/types"
+import eCommerce from "../Assets/eCommerce.png"
+import weather from "../Assets/weather.png"
+import blog from "../Assets/blog.png"
 
 export const workPlaces: WorkPlace[] = [
   "Hullabalook",
   "Sigma Labs XYZ",
   "MHA MacIntyre Hudson",
+]
+
+export const projects: Project[] = [
+  "E-commerce application",
+  "Weather application",
+  "Blog application",
 ]
 
 export const workExperienceDetails: WorkExperienceDetail[] = [
@@ -45,5 +59,31 @@ export const workExperienceDetails: WorkExperienceDetail[] = [
       "Achieved first-time passes in Certificate in Finance, Accountancy and Business level exams (CFAB)",
       "Received an Outstanding Performance Award Scheme (OPAS) prize for my work during our team’s busy season",
     ],
+  },
+]
+
+export const projectDetails: ProjectDetail[] = [
+  {
+    projectName: "E-commerce application",
+    image: eCommerce,
+    projectTech:
+      "Python  Django  Django REST Framework  React.js  JavaScript  HTML  Bootstrap",
+    projectPoints:
+      "An online store where users can view products as well as read and post reviews. I developed data models for products/reviews and API endpoints using the Django REST Framework which are consumed by the frontend I built using React. Additionally, I styled the project using React Bootstrap.",
+  },
+
+  {
+    projectName: "Weather application",
+    image: weather,
+    projectTech: "React.js  TypeScript  HTML  CSS",
+    projectPoints:
+      "An application where users can view the current temperature in five major world cities, fetching data from a public weather API. The user can also click through to view a 16 day forecast for each city. The project was built using React and TypeScript. I added caching functionality to reduce unnecessary API calls.",
+  },
+  {
+    projectName: "Blog application",
+    image: blog,
+    projectTech: "Python  Django  HTML  CSS",
+    projectPoints:
+      "A project built by reading Django 4 By Example where users can view, comment on and share blog posts. I have learnt many techniques in Django, including custom model managers, SEO-friendly URLs and pagination.",
   },
 ]

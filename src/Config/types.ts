@@ -4,6 +4,11 @@ export type WorkPlace =
   | "Sigma Labs XYZ"
   | "MHA MacIntyre Hudson"
 
+export type Project =
+  | "E-commerce application"
+  | "Weather application"
+  | "Blog application"
+
 export type NavbarOption = "about" | "experience" | "projects" | "contact"
 export type Joke = string | null
 
@@ -18,6 +23,17 @@ export interface WorkExperienceDetail {
   dates: string
   jobTitle: string
   experiencePoints: string[]
+}
+
+export interface ProjectDetail {
+  projectName: Project
+  image: string
+  projectTech: string
+  projectPoints: string
+}
+
+export interface ProjectDetailsProps {
+  projectName: Project
 }
 
 export interface BodyClassToggleProps {

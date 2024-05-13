@@ -12,7 +12,7 @@
   border-bottom: 1px solid $dark-colour;
   backdrop-filter: blur(5px);
   transition: transform 0.5s;
-  height: 50px;
+  height: 60px;
   position: sticky;
   top: 0;
 }
@@ -42,7 +42,7 @@
   position: relative;
   overflow: hidden;
   width: 110px;
-  height: 50px;
+  height: 60px;
   padding: 3px;
   box-sizing: border-box;
 }
@@ -65,7 +65,7 @@
 .navbar-button::after {
   position: absolute;
   width: 110px;
-  height: 50px;
+  height: 60px;
   padding: 3px;
 }
 
@@ -112,7 +112,7 @@
 }
 
 .links-container {
-  height: 50px;
+  height: 60px;
   width: 160px;
   background: $black;
   display: flex;
