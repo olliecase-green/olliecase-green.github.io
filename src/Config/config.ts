@@ -1,6 +1,12 @@
-import { workExperienceDetail } from "../Config/types"
+import { WorkExperienceDetail, WorkPlace } from "../Config/types"
 
-export const workExperienceDetails: workExperienceDetail[] = [
+export const workPlaces: WorkPlace[] = [
+  "Hullabalook",
+  "Sigma Labs XYZ",
+  "MHA MacIntyre Hudson",
+]
+
+export const workExperienceDetails: WorkExperienceDetail[] = [
   {
     name: "Hullabalook",
     link: "https://www.hullabalook.com/",

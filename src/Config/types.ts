@@ -12,7 +12,7 @@ export interface CompanyDetailsProps {
   currentWork: WorkPlace
 }
 
-export interface workExperienceDetail {
+export interface WorkExperienceDetail {
   name: WorkPlace
   link: string
   dates: string

@@ -1,15 +1,11 @@
 import { useState } from "react"
 import { WorkPlace } from "../Config/types"
+import { workPlaces } from "../Config/config"
 import CompanyDetails from "./CompanyDetails"
 import "../CSS/Experience.scss"
 
 function Experience() {
   const [currentWork, setCurrentWork] = useState<WorkPlace>("Hullabalook")
-  const workPlaces: WorkPlace[] = [
-    "Hullabalook",
-    "Sigma Labs XYZ",
-    "MHA MacIntyre Hudson",
-  ]
 
   function createWorkButtons() {
     return workPlaces.map((workPlace) => (

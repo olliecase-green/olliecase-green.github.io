@@ -1,11 +1,11 @@
-import { CompanyDetailsProps, workExperienceDetail } from "../Config/types"
+import { CompanyDetailsProps, WorkExperienceDetail } from "../Config/types"
 import { workExperienceDetails } from "../Config/config"
 import "../CSS/Experience.scss"
 
 function CompanyDetails(props: CompanyDetailsProps) {
   const currentWorkDetails = workExperienceDetails.find(
     (detail) => detail.name === props.currentWork
-  ) as workExperienceDetail
+  ) as WorkExperienceDetail
   const { name, link, dates, jobTitle, experiencePoints } = currentWorkDetails
 
   function createExperienceList() {
