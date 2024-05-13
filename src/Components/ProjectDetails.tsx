@@ -1,4 +1,3 @@
-// import github from "../Assets/linkedin.png"
 import { ProjectDetail, ProjectDetailsProps } from "../Config/types"
 import { projectDetails } from "../Config/config"
 import "../CSS/Projects.scss"
@@ -15,12 +14,14 @@ function ProjectDetails(props: ProjectDetailsProps) {
 
   return (
     <div className={projectContainerClass}>
-      <img src={image} alt="project" />
       <div className={detailsClass}>
         <div className="project-name">{projectName}</div>
         <div className="project-points">{projectPoints}</div>
-        <div className="tech">{projectTech}</div>
       </div>
+      <div className="project-image-container">
+        <img src={image} alt="project" />
+      </div>
+      <div className="tech">{projectTech}</div>
     </div>
   )
 }

@@ -11,40 +11,43 @@
 }
 
 .project-name {
+  margin: 0 0 10px 0;
   color: $light-colour;
   font-size: 30px;
 }
 
 .details-container {
-  display: grid;
-  grid-template-areas: "left right";
-  grid-gap: 10px;
   margin: 0 0 200px 0;
 }
 
-.details-container img {
-  height: 300px;
+.project-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-image-container img {
+  margin-top: -18px; // Overlap effect
+  width: 90%;
   border-radius: 5px;
-  grid-area: left;
+  box-shadow: 0 0 10px $black;
 }
 
 .project-details {
-  grid-area: right;
   text-align: right;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.Weather {
-  grid-area: left;
+  justify-content: flex-start;
+  z-index: 1;
 }
 
 .tech {
+  grid-area: tech;
   font-family: $secondary-font;
   font-weight: bold;
   font-size: 18px;
   color: $light-colour;
+  text-align: center;
+  margin: 20px 0 0 0;
 }
 
 .project-points {
@@ -52,33 +55,74 @@
   background: $dark-colour;
   border-radius: 5px;
   padding: 16px;
-  margin: 10px 0;
-  margin-left: -30px; // Overlap effect
-  box-shadow: 0 0 10px $black;
+  box-shadow: none;
 }
 
 .Weather-container {
-  img {
-    grid-area: right;
-  }
-
   .project-details {
     text-align: left;
-  }
-
-  .project-points {
-    margin-left: 0;
-    margin-right: -30px; // Overlap effect
   }
 }
 
 @media screen and (min-width: $tablet) {
+  .project-details {
+    grid-area: right;
+  }
+
+  .Weather {
+    grid-area: left;
+  }
+
+  .details-container {
+    display: grid;
+    grid-template-areas:
+      "left right"
+      "tech tech";
+    grid-gap: 10px;
+  }
+
+  .project-image-container {
+    display: block;
+    grid-area: left;
+  }
+
+  .project-image-container img {
+    margin-top: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
   .projects-container {
     padding: 50px 50px 200px 50px;
   }
 
   .projects-title {
     font-size: 38px;
+  }
+
+  .project-points {
+    margin-left: -30px; // Overlap effect
+    box-shadow: 0 0 10px $black;
+  }
+
+  .Weather-container {
+    .project-points {
+      margin-left: 0;
+      margin-right: -30px; // Overlap effect
+    }
+
+    .project-image-container {
+      grid-area: right;
+    }
+
+    .tech {
+      text-align: left;
+    }
+  }
+
+  .tech {
+    margin: 0;
+    text-align: right;
   }
 }
 
