@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import BodyClassToggle from "./BodyClassToggle"
 import { NavbarOption } from "../Config/types"
+import github from "../Assets/github.png"
+import linkedin from "../Assets/linkedin.png"
 import "../CSS/Navbar.scss"
 
 function Navbar() {
@@ -48,6 +50,22 @@ function Navbar() {
 
   return (
     <div className={navbarClass}>
+      <div className="links-container">
+        <a
+          href="https://github.com/olliecase-green"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src={github} alt="github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/oliver-case-green-40001416a/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src={linkedin} alt="linkedin" />
+        </a>
+      </div>
       <BodyClassToggle showOptions={showOptions} />
       <div className="hamburger" onClick={() => setShowOptions(!showOptions)}>
         ☰

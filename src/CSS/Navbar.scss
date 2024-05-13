@@ -8,7 +8,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   border-bottom: 1px solid $dark-colour;
   backdrop-filter: blur(5px);
   transition: transform 0.5s;
@@ -109,6 +109,24 @@
 
 .bg-tray-hidden {
   display: none;
+}
+
+.links-container {
+  height: 50px;
+  width: 120px;
+  background: $dark-colour;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.links-container a {
+  display: flex;
+  align-items: center;
+}
+
+.links-container a img {
+  height: 80%;
 }
 
 @media screen and (min-width: $tablet) {
