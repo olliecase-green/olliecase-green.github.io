@@ -65,7 +65,11 @@ function Navbar() {
         >
           <img src={linkedin} alt="linkedin" />
         </a>
-        <a href="../Assets/cv.pdf" rel="noopener noreferrer" target="_blank">
+        <a
+          href="/Oliver_Case-Green_CV.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <span className="cv-span">CV</span>
         </a>
       </div>
