@@ -79,7 +79,7 @@ export const projectDetails: ProjectDetail[] = [
     image: weather,
     projectTech: "React.js  TypeScript  HTML  CSS",
     projectPoints:
-      "An application where users can view the current temperature in five major world cities, fetching data from a public weather API. The user can also click through to view a 16 day forecast for each city. The project was built using React and TypeScript. I added caching functionality to reduce unnecessary API calls.",
+      "An application where users can view the current temperature in five major world cities, fetching data from a public weather API. The user can click through to view a 16 day forecast for each city. I also added caching functionality to reduce unnecessary API calls. The project was built using React and TypeScript.",
   },
   {
     projectName: "Blog application",
@@ -87,7 +87,7 @@ export const projectDetails: ProjectDetail[] = [
     image: blog,
     projectTech: "Python  Django  HTML  CSS",
     projectPoints:
-      "A project built by reading Django 4 By Example where users can view, comment on and share blog posts. I have learnt many techniques in Django, including custom model managers, SEO-friendly URLs and pagination.",
+      "A project built by reading Django 4 By Example where users can view, comment on and share blog posts. I learnt many techniques in Django, including custom model managers, SEO-friendly URLs and pagination.",
   },
 ]
 

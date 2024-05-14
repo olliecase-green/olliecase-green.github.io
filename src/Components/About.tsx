@@ -37,8 +37,9 @@ function About() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            here.
+            here
           </a>
+          .
         </div>
         <button
           className="lets-talk-button"
