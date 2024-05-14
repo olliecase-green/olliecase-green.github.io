@@ -40,7 +40,11 @@ function About() {
         </div>
         <div className="about-text">
           The source code can be seen in my GitHub repository available{" "}
-          <a href="https://github.com/olliecase-green/olliecase-green.github.io">
+          <a
+            href="https://github.com/olliecase-green/olliecase-green.github.io"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             here.
           </a>
         </div>
