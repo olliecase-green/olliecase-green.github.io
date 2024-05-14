@@ -65,6 +65,7 @@ export const workExperienceDetails: WorkExperienceDetail[] = [
 export const projectDetails: ProjectDetail[] = [
   {
     projectName: "E-commerce application",
+    projectLink: "https://github.com/olliecase-green/ecommerce-app",
     image: eCommerce,
     projectTech:
       "Python  Django  Django REST Framework  React.js  JavaScript  HTML  Bootstrap",
@@ -74,6 +75,7 @@ export const projectDetails: ProjectDetail[] = [
 
   {
     projectName: "Weather application",
+    projectLink: "https://github.com/olliecase-green/weather-app",
     image: weather,
     projectTech: "React.js  TypeScript  HTML  CSS",
     projectPoints:
@@ -81,6 +83,7 @@ export const projectDetails: ProjectDetail[] = [
   },
   {
     projectName: "Blog application",
+    projectLink: "https://github.com/olliecase-green/blog-application",
     image: blog,
     projectTech: "Python  Django  HTML  CSS",
     projectPoints:

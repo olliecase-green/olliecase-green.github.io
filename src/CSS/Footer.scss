@@ -7,46 +7,11 @@
   position: relative;
   bottom: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   border-top: 1px solid $dark-colour;
 }
 
-.joke-button {
-  border: none;
-  padding: 10px;
-  background: $dark-colour;
-  color: $white;
-  font-family: $secondary-font;
-  height: 50px;
-  cursor: pointer;
-  transition: 0.5s;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.joke-button:hover {
-  background-color: $white;
-  color: $black;
-}
-
-.joke {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-  margin: 0 20px 20px 20px;
-}
-
-@media screen and (min-width: $mobile) {
-  .joke {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: $tablet) {
-  .joke {
-    font-size: 20px;
-  }
+.footer-detail {
+  margin: 0 20px 0 0;
 }

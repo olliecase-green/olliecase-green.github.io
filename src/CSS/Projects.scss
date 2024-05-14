@@ -13,8 +13,17 @@
 .project-name {
   grid-area: top;
   margin: 0 0 10px 0;
-  color: $light-colour;
   font-size: 30px;
+}
+
+.project-name a {
+  text-decoration: none;
+  color: $light-colour;
+  transition: 0.1s;
+}
+
+.project-name a:hover {
+  color: $light-colour-hover;
 }
 
 .details-container {
@@ -29,7 +38,6 @@
 .project-image-container img {
   margin-top: -90px; // Overlap effect
   width: 90%;
-  border-radius: 5px;
   box-shadow: 0 0 10px $black;
 }
 
@@ -49,7 +57,7 @@
   font-weight: bold;
   color: $light-colour;
   text-align: center;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 .project-points,
@@ -60,7 +68,6 @@
 .project-points {
   grid-area: bottom;
   background: $dark-colour;
-  border-radius: 5px;
   padding: 16px 16px 100px 16px;
   box-shadow: none;
 }
@@ -135,7 +142,7 @@
 
 @media screen and (min-width: $desktop) {
   .projects-container {
-    padding: 50px 175px 200px 175px;
+    padding: 50px 100px 200px 100px;
   }
 
   .project-points,

@@ -10,7 +10,6 @@ export type Project =
   | "Blog application"
 
 export type NavbarOption = "about" | "experience" | "projects" | "contact"
-export type Joke = string | null
 
 // Interfaces
 export interface CompanyDetailsProps {
@@ -27,6 +26,7 @@ export interface WorkExperienceDetail {
 
 export interface ProjectDetail {
   projectName: Project
+  projectLink: string
   image: string
   projectTech: string
   projectPoints: string
@@ -38,10 +38,4 @@ export interface ProjectDetailsProps {
 
 export interface BodyClassToggleProps {
   showOptions: boolean
-}
-
-export interface JokeData {
-  id: string
-  joke?: string
-  status: number
 }
