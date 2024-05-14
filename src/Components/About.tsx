@@ -36,11 +36,15 @@ function About() {
           This website was built using React and TypeScript and is hosted on
           GitHub pages. To navigate between pages, I used React Router.
         </div>
-        <h3 className="additional-info">Additional features</h3>
+        <div className="about-text">
+          {" "}
+          The source code can be seen in my GitHub repository:
+          https://github.com/olliecase-green/olliecase-green.github.io
+        </div>
+        {/* <h3 className="additional-info">Additional features</h3>
         <div className="about-text">
           Additional features which are not yet finished include:
           <ul>
-            <li>The Projects section needs styling for mobiles.</li>
             <li>
               There will be a light / dark mode option to change the theme of
               the site. I am planning to use React Context API to globally store
@@ -50,7 +54,7 @@ function About() {
           </ul>
           The source code can be seen in my GitHub repository:
           https://github.com/olliecase-green/olliecase-green.github.io
-        </div>
+        </div> */}
         <button className="lets-talk-button" onClick={handleClick}>
           <div className="button-background"></div>
           <span>Let's talk!</span>

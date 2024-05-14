@@ -17,11 +17,11 @@ function ProjectDetails(props: ProjectDetailsProps) {
       <div className={detailsClass}>
         <div className="project-name">{projectName}</div>
         <div className="project-points">{projectPoints}</div>
+        <div className="tech">{projectTech}</div>
       </div>
       <div className="project-image-container">
         <img src={image} alt="project" />
       </div>
-      <div className="tech">{projectTech}</div>
     </div>
   )
 }
