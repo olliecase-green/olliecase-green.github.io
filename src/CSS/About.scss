@@ -103,12 +103,20 @@
 }
 
 .emphasis-text {
-  // font-style: italic;
   font-weight: bold;
 }
 
 .additional-info {
   font-size: 24px;
+}
+
+.about-text a {
+  color: $white;
+  transition: 0.1s;
+}
+
+.about-text a:hover {
+  color: $light-colour-hover;
 }
 
 @media screen and (min-width: $mobile) {
@@ -123,15 +131,6 @@
 
   .about-text {
     font-size: 18px;
-  }
-
-  .about-text a {
-    color: $white;
-    transition: 0.1s;
-  }
-
-  .about-text a:hover {
-    color: $light-colour-hover;
   }
 
   .lets-talk-button {
