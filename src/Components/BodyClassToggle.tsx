@@ -5,7 +5,7 @@ function BodyClassToggle(props: BodyClassToggleProps) {
   const { showOptions } = props
 
   useEffect(() => {
-    document.body.classList.toggle("no-scroll", showOptions)
+    document.documentElement.classList.toggle("no-scroll", showOptions)
   }, [showOptions])
 
   return null
