@@ -90,3 +90,9 @@ export const projectDetails: ProjectDetail[] = [
       "A project built by reading Django 4 By Example where users can view, comment on and share blog posts. I have learnt many techniques in Django, including custom model managers, SEO-friendly URLs and pagination.",
   },
 ]
+
+export const emailAddress = "olivercase-green@hotmail.co.uk"
+export const subject = encodeURIComponent("Let's talk!")
+export const body = encodeURIComponent(
+  "Hi Ollie,\n\nI just saw your portfolio online..."
+)

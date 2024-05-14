@@ -11,8 +11,9 @@ import "./CSS/App.scss"
 function App() {
   return (
     <HashRouter>
-      <ScrollToTop />
       <div className="App">
+        {/* <div className="background-tray"></div> */}
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<About />} />

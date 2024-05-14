@@ -1,15 +1,7 @@
 import "../CSS/About.scss"
+import { emailAddress, subject, body } from "../Config/config"
 
 function About() {
-  function handleClick() {
-    const emailAddress = "olivercase-green@hotmail.co.uk"
-    const subject = encodeURIComponent("Let's talk!")
-    const body = encodeURIComponent(
-      "Hi Ollie,\n\nI just saw your portfolio online..."
-    )
-    window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`
-  }
-
   return (
     <div className="about-container">
       <div className="main-content">
@@ -48,7 +40,12 @@ function About() {
             here.
           </a>
         </div>
-        <button className="lets-talk-button" onClick={handleClick}>
+        <button
+          className="lets-talk-button"
+          onClick={() =>
+            (window.location.href = `mailto:${emailAddress}?subject=${subject}&body=${body}`)
+          }
+        >
           <div className="button-background"></div>
           <span>Let's talk!</span>
         </button>

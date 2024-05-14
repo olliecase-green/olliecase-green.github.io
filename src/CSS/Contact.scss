@@ -5,6 +5,15 @@
   font-size: 16px;
 }
 
+.contact-link {
+  color: $white;
+  transition: 0.1s;
+}
+
+.contact-link:hover {
+  color: $light-colour-hover;
+}
+
 .contact-title {
   font-size: 30px;
   margin: 0 0 35px 0;

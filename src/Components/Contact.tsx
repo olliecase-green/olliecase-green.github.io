@@ -1,6 +1,9 @@
 import "../CSS/Contact.scss"
+import { emailAddress, subject, body } from "../Config/config"
 
 function Contact() {
+  // const mailTo = `mailto:${emailAddress}?subject=${subject}&body=${body}`
+
   return (
     <div className="contact-container">
       <h2 className="contact-title">Contact</h2>
@@ -12,15 +15,34 @@ function Contact() {
       </div>
       <div>
         <span className="contact-detail">Email: </span>
-        olivercase-green@hotmail.co.uk
+        <a
+          className="contact-link"
+          href={`mailto:${emailAddress}?subject=${subject}&body=${body}`}
+        >
+          olivercase-green@hotmail.co.uk
+        </a>
       </div>
       <div>
         <span className="contact-detail">GitHub: </span>
-        github.com/olliecase-green
+        <a
+          className="contact-link"
+          href="https://github.com/olliecase-green"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          github.com/olliecase-green
+        </a>
       </div>
       <div>
         <span className="contact-detail">LinkedIn: </span>
-        linkedin.com/in/oliver-case-green-40001416a/
+        <a
+          className="contact-link"
+          href="https://linkedin.com/in/oliver-case-green-40001416a/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          linkedin.com/in/oliver-case-green-40001416a/
+        </a>
       </div>
     </div>
   )

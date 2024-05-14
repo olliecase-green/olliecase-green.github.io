@@ -22,10 +22,6 @@
   transform: translateY(-100%);
 }
 
-.options-hidden {
-  transform: translateX(100%);
-}
-
 .navbar-name {
   margin: 0 0 0 10px;
 }
@@ -84,8 +80,14 @@
   position: absolute;
   right: 0px;
   top: 60px;
-  transition: 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   z-index: 2;
+  opacity: 1;
+}
+
+.options-hidden {
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 .navbar-options a {
@@ -145,6 +147,7 @@
     position: static;
     display: flex;
     justify-content: end;
+    opacity: 1;
   }
 
   .hamburger {
