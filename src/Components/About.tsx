@@ -25,15 +25,12 @@ function About() {
           </span>
         </div>
         <div className="about-text">
-          I am ideally looking for Frontend and Full-stack Developer positions
-          in my next position. I am also very confident working with React from
-          my full-time coding bootcamp, Sigma Labs XYZ, and Django from my
-          personal projects - please check out my projects in the navbar above!
-        </div>
-        <div className="about-text">
-          In my spare time, I have been teaching myself Django for backend
-          development, initially from online documentation and more recently
-          from a book:{" "}
+          I am also very confident working with{" "}
+          <span className="emphasis-text">React</span> from my full-time coding
+          bootcamp, Sigma Labs XYZ, and{" "}
+          <span className="emphasis-text">Django</span> from my personal
+          projects - please check out my projects in the navbar above! I have
+          been learning Django in my spare time for the past year from the book:{" "}
           <span className="emphasis-text">Django 4 By Example</span>.
         </div>
         <h3 className="additional-info">Site info</h3>
