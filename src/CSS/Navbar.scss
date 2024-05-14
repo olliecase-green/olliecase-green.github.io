@@ -17,6 +17,7 @@
   top: 0;
   z-index: 2;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar-hidden {
@@ -32,9 +33,9 @@
   text-transform: uppercase;
   color: $dark-colour;
   border: none;
-  border-top: 1px solid $dark-colour;
   border-left: 1px solid $dark-colour;
   border-right: 1px solid $dark-colour;
+  border-bottom: 1px solid $dark-colour;
   cursor: pointer;
   justify-content: center;
   position: relative;
@@ -125,6 +126,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border-bottom: 1px solid $dark-colour;
 }
 
 .links-container a {
@@ -160,6 +162,11 @@
 
   .options-hidden {
     transform: translateX(0);
+  }
+
+  .navbar-button {
+    border-top: 1px solid $dark-colour;
+    border-bottom: none;
   }
 
   .navbar-button::before {
