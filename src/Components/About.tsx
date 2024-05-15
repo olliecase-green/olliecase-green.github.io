@@ -25,6 +25,11 @@ function About() {
           been learning Django in my spare time for the past year from the book:{" "}
           <span className="emphasis-text">Django 4 By Example</span>.
         </div>
+        <div className="about-text">
+          I am ideally looking for Frontend and Full-stack Developer positions
+          for my next role. I would be happy to work any number of days a week
+          in the office, or fully remote positions too.
+        </div>
         <h3 className="additional-info">Site info</h3>
         <div className="about-text">
           This website was built using React and TypeScript and is hosted on

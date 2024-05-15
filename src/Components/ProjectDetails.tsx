@@ -1,5 +1,6 @@
 import { ProjectDetail, ProjectDetailsProps } from "../Config/types"
 import { projectDetails } from "../Config/config"
+import github from "../Assets/github.png"
 import "../CSS/Projects.scss"
 
 function ProjectDetails(props: ProjectDetailsProps) {
@@ -18,6 +19,9 @@ function ProjectDetails(props: ProjectDetailsProps) {
         <div className="project-name">
           <a href={projectLink} rel="noopener noreferrer" target="_blank">
             {projectName}
+          </a>
+          <a href={projectLink} rel="noopener noreferrer" target="_blank">
+            <img src={github} alt="project-link" />
           </a>
         </div>
         <div className="project-points">{projectPoints}</div>
