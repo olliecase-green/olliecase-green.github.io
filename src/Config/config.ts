@@ -56,6 +56,7 @@ export const workExperienceDetails: WorkExperienceDetail[] = [
     dates: "July 2019 – October 2021",
     jobTitle: "Audit & Accounts Semi-Senior",
     experiencePoints: [
+      "Gained financial knowledge working on audits and accounts preparation.",
       "Achieved first-time passes in Certificate in Finance, Accountancy and Business level exams (CFAB)",
       "Received an Outstanding Performance Award Scheme (OPAS) prize for my work during our team’s busy season",
     ],

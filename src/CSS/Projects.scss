@@ -136,6 +136,11 @@
     padding: 16px;
     margin-left: -30px; // Overlap effect
     box-shadow: 0 0 10px $black;
+    transition: 0.2s ease-in-out;
+  }
+
+  .project-points:hover {
+    box-shadow: 0 0 30px $black;
   }
 
   .Weather-container {
