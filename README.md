@@ -3,7 +3,7 @@
 ### Tech
 
 - React 18.2.0
-- React Router 6.22.3
+- React Router 6.23.0
 - Hosted on GitHub Pages
 
 ### Features
