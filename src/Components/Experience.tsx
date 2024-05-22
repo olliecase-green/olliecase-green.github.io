@@ -3,6 +3,7 @@ import { WorkPlace } from "../Config/types"
 import { workPlaces } from "../Config/config"
 import CompanyDetails from "./CompanyDetails"
 import "../CSS/Experience.scss"
+import "../CSS/App.scss"
 
 function Experience() {
   const [currentWork, setCurrentWork] = useState<WorkPlace>("Hullabalook")
@@ -21,7 +22,7 @@ function Experience() {
 
   return (
     <div className="experience-container">
-      <h2 className="experience-title">Work Experience</h2>
+      <h2 className="page-title experience-title">Work Experience</h2>
       <div className="work-container">
         <div className="work-list">{createWorkButtons()}</div>
         <CompanyDetails currentWork={currentWork} />

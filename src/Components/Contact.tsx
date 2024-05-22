@@ -6,7 +6,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2 className="contact-title">Contact</h2>
+      <h2 className="page-title contact-title">Contact</h2>
       <h3>Thanks for visiting my site! </h3>
       <div className="contact-text">
         I am ideally looking for Frontend and Full-stack Developer positions for

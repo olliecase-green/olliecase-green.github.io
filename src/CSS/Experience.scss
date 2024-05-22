@@ -5,9 +5,7 @@
 }
 
 .experience-title {
-  font-size: 30px;
   margin: 0 0 25px 0;
-  color: $white;
 }
 
 .work-container {
@@ -96,10 +94,6 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .experience-title {
-    font-size: 38px;
-  }
-
   .work-container {
     flex-direction: row;
   }
