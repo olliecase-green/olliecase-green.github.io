@@ -2,8 +2,6 @@ import "../CSS/Contact.scss"
 import { emailAddress, subject, body } from "../Config/config"
 
 function Contact() {
-  // const mailTo = `mailto:${emailAddress}?subject=${subject}&body=${body}`
-
   return (
     <div className="contact-container">
       <h2 className="page-title contact-title">Contact</h2>

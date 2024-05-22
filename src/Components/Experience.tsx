@@ -3,7 +3,6 @@ import { WorkPlace } from "../Config/types"
 import { workPlaces } from "../Config/config"
 import CompanyDetails from "./CompanyDetails"
 import "../CSS/Experience.scss"
-import "../CSS/App.scss"
 
 function Experience() {
   const [currentWork, setCurrentWork] = useState<WorkPlace>("Hullabalook")
