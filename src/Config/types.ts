@@ -5,6 +5,7 @@ export type WorkPlace =
   | "MHA MacIntyre Hudson"
 
 export type Project =
+  | "Chat application"
   | "E-commerce application"
   | "Weather application"
   | "Blog application"
@@ -27,6 +28,7 @@ export interface WorkExperienceDetail {
 export interface ProjectDetail {
   projectName: Project
   projectLink: string
+  deployedLink?: string
   image: string
   projectTech: string
   projectPoints: string

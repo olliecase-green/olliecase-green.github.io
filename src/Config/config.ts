@@ -7,6 +7,7 @@ import {
 import eCommerce from "../Assets/eCommerce.png"
 import weather from "../Assets/weather.png"
 import blog from "../Assets/blog.png"
+import chatApp from "../Assets/chatApp.png"
 
 export const workPlaces: WorkPlace[] = [
   "Hullabalook",
@@ -15,6 +16,7 @@ export const workPlaces: WorkPlace[] = [
 ]
 
 export const projects: Project[] = [
+  "Chat application",
   "E-commerce application",
   "Weather application",
   "Blog application",
@@ -64,6 +66,17 @@ export const workExperienceDetails: WorkExperienceDetail[] = [
 ]
 
 export const projectDetails: ProjectDetail[] = [
+  {
+    projectName: "Chat application",
+    projectLink: "https://github.com/olliecase-green/chat-app",
+    deployedLink: "https://whatsupp-q0cq.onrender.com/",
+    image: chatApp,
+    projectTech:
+      "Node.js  Express.js  The WebSocket API  TypeScript  JavaScript  HTML  CSS",
+    projectPoints:
+      "A chat application deployed using Render. Currently, the app allows the user to enter a username and join the main chat room. If other users are in the chat room, messages will be sent between users using The WebSocket API. In the future, I am planning to implement different chat rooms, message history and account creation using PostgreSQL.",
+  },
+
   {
     projectName: "E-commerce application",
     projectLink: "https://github.com/olliecase-green/ecommerce-app",

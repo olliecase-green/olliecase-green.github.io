@@ -96,7 +96,8 @@
     justify-content: right;
   }
 
-  .Weather {
+  .Weather,
+  .Chat {
     grid-area: left;
 
     .project-name {
@@ -137,7 +138,8 @@
     box-shadow: 0 0 30px $black;
   }
 
-  .Weather-container {
+  .Weather-container,
+  .Chat-container {
     .project-points {
       margin-left: 0;
       margin-right: -30px; // Overlap effect
