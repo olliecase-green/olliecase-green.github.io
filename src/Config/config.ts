@@ -74,7 +74,7 @@ export const projectDetails: ProjectDetail[] = [
     projectTech:
       "Node.js  Express.js  The WebSocket API  TypeScript  JavaScript  HTML  CSS",
     projectPoints:
-      "A chat application deployed using Render. Currently, the app allows the user to enter a username and join the main chat room. If other users are in the chat room, messages will be sent between users using The WebSocket API. In the future, I am planning to implement different chat rooms, message history and account creation using PostgreSQL.",
+      "A chat application deployed using Render. Currently a work-in-progress, the app allows the user to enter a username and join the main chat room. If other users are in the chat room, messages will be sent between users using The WebSocket API. In the future, I am planning to implement different chat rooms, message history and account creation using PostgreSQL.",
   },
 
   {
